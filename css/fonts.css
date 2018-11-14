@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+h1 {
+  font-family: Lato, sans-serif; }
+
+h2 {
+  font-family: Lato, sans-serif; }
+
+h3 {
+  font-family: Lato, sans-serif; }
+
+h4 {
+  font-family: Lato, sans-serif; }
+
+h5 {
+  font-family: Lato, sans-serif; }
+
+h6 {
+  font-family: Lato, sans-serif; }
+
+h7 {
+  font-family: Lato, sans-serif; }
+
+p {
+  font-family: Lato, sans-serif; }
+
+a {
+  font-family: Lato, sans-serif; }
+
+@font-face {
+  font-family: ua-logos;
+  src: url(../fonts/ua-logos.eot?-x10hb6);
+  src: url(../fonts/ua-logos.eot?#iefix-x10hb6) format("embedded-opentype"), url(../fonts/ua-logos.ttf?-x10hb6) format("truetype"), url(../fonts/ua-logos.woff?-x10hb6) format("woff"), url(../fonts/ua-logos.svg?-x10hb6#ua-icons) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: ua-icons;
+  src: url(../fonts/ua-icons.eot?6bwdin);
+  src: url(../fonts/ua-icons.eot?6bwdin#iefix) format("embedded-opentype"), url(../fonts/ua-icons.ttf?6bwdin) format("truetype"), url(../fonts/ua-icons.woff?6bwdin) format("woff"), url(../fonts/ua-icons.svg?6bwdin#ua-icons) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.ua-icon-denny-chimes {
+  position: fixed;
+  top: 84.1vh;
+  left: 50px;
+  font-size: 30vh;
+  color: #900f0f;
+  z-index: 1;
+  font-style: normal; }
+  .ua-icon-denny-chimes:before {
+    content: "\e800"; }
+
+[class^="ua-icon-"] {
+  font-family: ua-icons; }
+
+[class*=" ua-icon-"] {
+  font-family: ua-icons; }
+
+@media only screen and (max-width: 960px) {
+  .ua-icon-denny-chimes {
+    display: none; } }
+#wpadminbar * {
+  font-family: Lato, sans-serif; }
+
+.ua-logo-nameplate:before {
+  content: "\e601"; }
+
+.ua-logo-stacked:before {
+  content: "\e600"; }
+
+.ua-icon-volunteer-outreach:before {
+  content: "\e900"; }
+
+.ua-icon-ua-general:before {
+  content: "\e901"; }
+
+.ua-icon-ua-world:before {
+  content: "\e902"; }
+
+.ua-icon-sports:before {
+  content: "\e903"; }
+
+.ua-icon-social-work:before {
+  content: "\e904"; }
+
+.ua-icon-school-general:before {
+  content: "\e905"; }
+
+.ua-icon-nursing:before {
+  content: "\e906"; }
+
+.ua-icon-medical-chs:before {
+  content: "\e907"; }
+
+.ua-icon-libraries:before {
+  content: "\e908"; }
+
+.ua-icon-law:before {
+  content: "\e909"; }
+
+.ua-icon-honors:before {
+  content: "\e90a"; }
+
+.ua-icon-hes:before {
+  content: "\e90b"; }
+
+.ua-icon-grow:before {
+  content: "\e90c"; }
+
+.ua-icon-graduate:before {
+  content: "\e90d"; }
+
+.ua-icon-excellence:before {
+  content: "\e90e"; }
+
+.ua-icon-engineering:before {
+  content: "\e90f"; }
+
+.ua-icon-education:before {
+  content: "\e910"; }
+
+.ua-icon-continuing-studies:before {
+  content: "\e911"; }
+
+.ua-icon-communications:before {
+  content: "\e912"; }
+
+.ua-icon-business-2:before {
+  content: "\e913"; }
+
+.ua-icon-business-1:before {
+  content: "\e914"; }
+
+.ua-icon-awards:before {
+  content: "\e915"; }
+
+.ua-icon-arts-sciences:before {
+  content: "\e916"; }

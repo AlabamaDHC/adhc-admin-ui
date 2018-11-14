@@ -1,0 +1,709 @@
+//colors
+$white: #fff;
+$seashell: #f1f1f1;
+$color_santas_gray_approx: #a0a5aa;
+$color_wild_sand_approx: #f5f5f5;
+$color_mercury_approx: #e4e4e4;
+$color_log_cabin_approx: #232423;
+$color_bon_jour_approx: #e1e1e1;
+$color_cerulean_approx: #00b9eb;
+$color_red_berry_approx: #990000;
+$color_red_berry_80_approx: rgba(153, 0, 0, .8);
+$color_tamarillo_approx: #900f0f;
+$color_celeste_53_approx: rgba(204, 204, 204, 0.53);
+$color_link_hover: #12130f;
+$color_link_hover: #00b9eb;
+
+//urls
+$url_0: url(https://fonts.googleapis.com/css?family=Lato:700);
+
+//@extend-elements
+//original selectors
+//#adminmenu .awaiting-mod, #adminmenu .update-plugins
+%extend_1 {
+	float: right;
+	margin-top: -1px;
+	background-color: $color_red_berry_approx;
+}
+
+//original selectors
+//.wrap .add-new-h2, .wrap .add-new-h2:active
+%extend_2 {
+	color: $white;
+	top: -8px;
+	background: $color_red_berry_approx;
+}
+
+//original selectors
+//.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary
+%extend_3 {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	border: 0;
+}
+
+//original selectors
+//.wrap .add-new-h2:hover, .wrap .page-title-action:hover
+%extend_4 {
+	border-color: $color_red_berry_approx;
+	background: $white;
+	color: $color_red_berry_approx;
+}
+
+
+html {
+	background: $white;
+}
+body {
+	background: $seashell;
+}
+#wpwrap {
+	background: $seashell;
+}
+#adminmenu {
+	margin: 0;
+	background: $color_wild_sand_approx;
+	border-right: 1px solid $color_mercury_approx;
+	div {
+		&.wp-menu-name {
+			color: $color_log_cabin_approx;
+		}
+		&.wp-menu-image:before {
+			color: $color_santas_gray_approx;
+			color: $color_santas_gray_approx;
+		}
+	}
+	.wp-submenu {
+		background: $color_wild_sand_approx;
+		border-right: 1px solid $color_mercury_approx;
+		.wp-submenu-head {
+			color: $color_red_berry_approx;
+		}
+		li.current {
+			color: $color_red_berry_approx;
+			a {
+				color: $color_red_berry_approx;
+				&:focus {
+					color: $color_red_berry_approx;
+				}
+				&:hover {
+					color: $color_red_berry_approx;
+				}
+			}
+		}
+	}
+	.wp-has-current-submenu {
+		.wp-submenu {
+			background: $color_wild_sand_approx;
+			border-right: 1px solid $color_mercury_approx;
+			&.sub-open {
+				background: $color_wild_sand_approx;
+				border-right: 1px solid $color_mercury_approx;
+			}
+			.wp-submenu-head {
+				background: $color_red_berry_approx;
+				background: $white;
+			}
+		}
+		&.opensub .wp-submenu {
+			background: $color_wild_sand_approx;
+			border-right: 1px solid $color_mercury_approx;
+		}
+		div.wp-menu-image:before {
+			color: $color_red_berry_approx;
+		}
+	}
+	a {
+		&.wp-has-current-submenu {
+			&:focus + .wp-submenu {
+				background: $color_wild_sand_approx;
+				border-right: 1px solid $color_mercury_approx;
+				li.current a {
+					color: $color_red_berry_approx;
+				}
+			}
+			&:hover div.wp-menu-image:before {
+				color: $color_red_berry_approx;
+			}
+		}
+		&.menu-top {
+			padding: 7px 0;
+		}
+		&.current:hover div.wp-menu-image:before {
+			color: $color_red_berry_approx;
+		}
+	}
+	.awaiting-mod {
+		@extend %extend_1;
+	}
+	.update-plugins {
+		@extend %extend_1;
+	}
+	.wp-menu-arrow {
+		background: $color_red_berry_approx;
+		background: $white;
+		div {
+			background: $color_red_berry_approx;
+			background: $white;
+		}
+	}
+	li {
+		&.wp-has-current-submenu {
+			a.wp-has-current-submenu {
+				background: $color_red_berry_approx;
+				background: $white;
+				div.wp-menu-name {
+					color: $white;
+					color: $color_red_berry_approx;
+				}
+			}
+			&:hover div.wp-menu-image:before {
+				color: $color_red_berry_approx;
+			}
+		}
+		&.menu-top {
+			border-bottom: 1px solid $color_mercury_approx;
+			&:hover {
+				background: $color_red_berry_approx;
+				background: $white;
+			}
+		}
+		&.opensub {
+			> a.menu-top {
+				background: $color_red_berry_approx;
+				background: $white;
+			}
+			div.wp-menu-image:before {
+				color: $color_red_berry_approx!important;
+			}
+		}
+		&.wp-menu-separator {
+			display: none;
+		}
+		&.current a.menu-top {
+			background: $color_red_berry_approx;
+			background: $white;
+		}
+		> a.menu-top:focus {
+			background: $color_red_berry_approx;
+			background: $white;
+		}
+		&.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+			display: none;
+		}
+		a:focus div.wp-menu-image:before {
+			color: $color_red_berry_approx!important;
+		}
+		&:hover div.wp-menu-image:before {
+			color: $color_red_berry_approx!important;
+			color: $color_red_berry_approx;
+		}
+	}
+	.wp-submenu-head {
+		padding: 7px 0;
+	}
+	.wp-not-current-submenu .wp-submenu {
+		padding: 10px;
+	}
+	.opensub .wp-submenu li.current a {
+		color: $color_red_berry_approx;
+	}
+	.current div.wp-menu-image:before {
+		color: $color_red_berry_approx;
+	}
+}
+#adminmenuback {
+	background: $color_wild_sand_approx;
+	border-right: 1px solid $color_mercury_approx;
+}
+#adminmenuwrap {
+	background: $color_wild_sand_approx;
+	border-right: 1px solid $color_mercury_approx;
+}
+#collapse-menu {
+	color: $color_log_cabin_approx;
+}
+.wrap {
+	.add-new-h2 {
+		@extend %extend_2;
+		color: $white;
+		background-color: $color_red_berry_approx;
+		&:active {
+			@extend %extend_2;
+			color: $white;
+			background-color: $color_red_berry_approx;
+		}
+		&:hover {
+			@extend %extend_4;
+			background: $color_link_hover;
+		}
+	}
+	.page-title-action {
+		color: $white;
+		background-color: $color_red_berry_approx;
+		&:active {
+			color: $white;
+			background-color: $color_red_berry_approx;
+		}
+		&:hover {
+			@extend %extend_4;
+		}
+	}
+}
+div {
+	&.updated {
+		border: 1px solid $color_bon_jour_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		border-left: 5px solid $color_red_berry_approx;
+	}
+	&.mce-toolbar-grp {
+		background: $white!important;
+	}
+}
+input[type=email] {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+input[type=number] {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+input[type=password] {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+input[type=search] {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+input[type=tel] {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+input[type=text] {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+input[type=url] {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+select {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+textarea {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+}
+.file-error {
+	color: $color_cerulean_approx;
+	border: none;
+}
+.plugins {
+	a.delete:hover {
+		color: $color_cerulean_approx;
+		border: none;
+	}
+	.active th.check-column {
+		border-left: 4px solid $color_red_berry_approx;
+	}
+}
+.row-actions {
+	.delete a:hover {
+		color: $color_cerulean_approx;
+		border: none;
+	}
+	.spam a:hover {
+		color: $color_cerulean_approx;
+		border: none;
+	}
+	.trash a:hover {
+		color: $color_cerulean_approx;
+		border: none;
+	}
+}
+.postbox {
+	border: 1px solid $color_bon_jour_approx;
+}
+#major-publishing-actions {
+	background: $white;
+	padding: 0;
+}
+#delete-action {
+	float: none;
+	padding: 15px 0;
+	text-align: center;
+	a {
+		text-decoration: underline;
+	}
+}
+#publishing-action {
+	float: none;
+	display: block;
+	width: 100%;
+	.spinner {
+		width: 100%;
+		background-position: top center;
+		display: none;
+		float: none;
+		padding: 5px 0;
+		margin: 0;
+		&.is-active {
+			display: block;
+		}
+	}
+	#publish {
+		float: none;
+		font-size: 16px;
+		height: auto;
+		padding: 10px;
+		width: 100%;
+	}
+}
+.wp-core-ui {
+	.button {
+		@extend %extend_3;
+		background: $color_mercury_approx;
+		&:hover {
+			color: $white;
+			background: $color_red_berry_approx;
+			span.wp-media-buttons-icon:before {
+				color: $white;
+			}
+		}
+		&.button-primary.button-hero {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 2px 0 $color_red_berry_approx;
+		}
+	}
+	.button-primary {
+		@extend %extend_3;
+		color: $white;
+		background: $color_red_berry_approx;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 -1px 1px $color_red_berry_approx, 1px 0 1px $color_red_berry_approx, 0 1px 1px $color_red_berry_approx, -1px 0 1px $color_red_berry_approx;
+		&.focus {
+			background: $color_red_berry_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 $color_red_berry_approx, 0 0 2px 1px $color_red_berry_approx;
+		}
+		&.hover {
+			background: $color_red_berry_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 $color_red_berry_approx, 0 0 2px 1px $color_red_berry_approx;
+		}
+		&:focus {
+			background: $color_red_berry_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 $color_red_berry_approx, 0 0 2px 1px $color_red_berry_approx;
+		}
+		&:hover {
+			background: $color_red_berry_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 1px 0 $color_red_berry_approx, 0 0 2px 1px $color_red_berry_approx;
+		}
+	}
+	.button-secondary {
+		@extend %extend_3;
+		background: $color_mercury_approx;
+		&:hover {
+			color: $white;
+			background: $color_red_berry_approx;
+			span.wp-media-buttons-icon:before {
+				color: $white;
+			}
+		}
+	}
+}
+.wp-media-buttons {
+	.insert-media {
+		font-size: 12px;
+	}
+	.add_media span.wp-media-buttons-icon:before {
+		font-size: 14px!important;
+	}
+}
+#acf-col-right {
+	display: none;
+}
+#acf-col-left {
+	margin: 0!important;
+}
+input[type=radio] {
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+	&:checked:before {
+		background-color: $color_red_berry_approx;
+	}
+}
+input[type=checkbox] {
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_red_berry_80_approx;
+	}
+	&:checked:before {
+		color: $color_red_berry_approx;
+	}
+}
+#wpfooter {
+	background-color: $color_tamarillo_approx;
+}
+.contextual-help-tabs {
+	.active {
+		border-left: 2px solid $color_red_berry_approx;
+		background: $color_celeste_53_approx;
+	}
+	a:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+}
+#contextual-help-back {
+	background: $color_celeste_53_approx;
+}
+a {
+	color: $color_red_berry_approx;
+	&:focus {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 1px $color_red_berry_approx, 0 0 2px 1px $color_red_berry_80_approx;
+		.media-icon img {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 1px $color_red_berry_approx, 0 0 2px 1px $color_red_berry_80_approx;
+		}
+	}
+	&:hover {
+		color: $color_link_hover;
+	}
+}
+.composer-switch {
+	a {
+		background-color: $color_red_berry_approx!important;
+		&:visited {
+			background-color: $color_red_berry_approx!important;
+			&.wpb_switch-to-front-composer {
+				background-color: $color_red_berry_approx!important;
+				&:hover {
+					background-color: $color_link_hover!important;
+				}
+			}
+			&.wpb_switch-to-composer:hover {
+				background-color: $color_link_hover!important;
+			}
+		}
+		&.wpb_switch-to-front-composer {
+			background-color: $color_red_berry_approx!important;
+			&:hover {
+				background-color: $color_link_hover!important;
+			}
+		}
+		&.wpb_switch-to-composer:hover {
+			background-color: $color_link_hover!important;
+		}
+	}
+	.logo-icon {
+		background-color: $color_red_berry_approx!important;
+	}
+	.vc-spacer {
+		background-color: $color_link_hover!important;
+	}
+}
+.no-js li.wp-has-current-submenu:hover .wp-submenu {
+	background: $color_wild_sand_approx;
+	border-right: 1px solid $color_mercury_approx;
+}
+#collapse-button div:after {
+	color: $color_log_cabin_approx;
+}
+.folded #adminmenu {
+	li {
+		&.wp-has-current-submenu {
+			background: $color_red_berry_approx;
+			background: $white;
+		}
+		&.current.menu-top {
+			background: $color_red_berry_approx;
+			background: $white;
+		}
+	}
+	.wp-submenu-head {
+		padding: 5px 0;
+	}
+	a.menu-top {
+		padding: 5px 0;
+	}
+	.wp-has-current-submenu .wp-submenu {
+		padding: 10px;
+	}
+}
+ul#adminmenu {
+	a.wp-has-current-submenu:after {
+		display: none;
+	}
+	> li.current > a.current:after {
+		display: none;
+	}
+}
+.update-core-php h2 {
+	margin-top: 1em;
+}
+#titlediv #title-prompt-text {
+	font-size: 1.2em;
+	font-weight: 100;
+}
+#all-plugins-table .plugins a.delete:hover {
+	color: $color_cerulean_approx;
+	border: none;
+}
+#media-items a {
+	&.delete-permanently:hover {
+		color: $color_cerulean_approx;
+		border: none;
+	}
+	&.delete:hover {
+		color: $color_cerulean_approx;
+		border: none;
+	}
+}
+#nav-menu-footer .menu-delete:hover {
+	color: $color_cerulean_approx;
+	border: none;
+}
+#search-plugins-table .plugins a.delete:hover {
+	color: $color_cerulean_approx;
+	border: none;
+}
+.submitbox .submitdelete:hover {
+	color: $color_cerulean_approx;
+	border: none;
+}
+abbr.required {
+	color: $color_cerulean_approx;
+	border: none;
+}
+span.required {
+	color: $color_cerulean_approx;
+	border: none;
+}
+.menu.ui-sortable .menu-item-handle {
+	background: $color_wild_sand_approx;
+}
+.meta-box-sortables.ui-sortable .hndle {
+	background: $color_wild_sand_approx;
+}
+.html-active .switch-html {
+	background: $white!important;
+}
+.tmce-active .switch-tmce {
+	background: $white!important;
+}
+.vc_navbar.subnav-fixed {
+	top: 40px!important;
+}
+input[type=time]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_red_berry_80_approx;
+}
+input[type=week]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_red_berry_80_approx;
+}
+input[type=color]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_red_berry_80_approx;
+}
+input[type=date]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_red_berry_80_approx;
+}
+input[type=datetime]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_red_berry_80_approx;
+}
+input[type=datetime-local]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_red_berry_80_approx;
+}
+input[type=month]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_red_berry_80_approx;
+}
+.tagcloud-link.button-link {
+	color: $color_red_berry_approx;
+}
+.theme-overlay .parent-theme {
+	border-left: 4px solid $color_red_berry_approx;
+}
+.plugin-update-tr.active td {
+	border-left: 4px solid $color_red_berry_approx;
+}
+.wp-person a:focus .gravatar {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 0 1px $color_red_berry_approx, 0 0 2px 1px $color_red_berry_80_approx;
+}
+.view-switch a.current:before {
+	color: $color_red_berry_approx;
+}
+
+.wp-core-ui .button-link:focus, .wp-core-ui .button-secondary:focus, .wp-core-ui .button.focus, .wp-core-ui .button:focus {
+	box-shadow: 0 0 0 1px $color_red_berry_approx, 0 0 2px 1px $color_red_berry_80_approx;
+}

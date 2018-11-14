@@ -1,0 +1,165 @@
+//colors
+$color_tamarillo_approx: #900f0f;
+
+//fonts
+$font_0: ua-logos;
+$font_1: ua-icons;
+$font_2: Lato;
+$font_3: sans-serif;
+
+//urls
+
+$url_1: url(../fonts/ua-logos.eot?-x10hb6);
+$url_2: url(../fonts/ua-logos.eot?#iefix-x10hb6);
+$url_3: url(../fonts/ua-logos.ttf?-x10hb6);
+$url_4: url(../fonts/ua-logos.woff?-x10hb6);
+$url_5: url(../fonts/ua-logos.svg?-x10hb6#ua-icons);
+$url_6: url(../fonts/ua-icons.eot?6bwdin);
+$url_7: url(../fonts/ua-icons.eot?6bwdin#iefix);
+$url_8: url(../fonts/ua-icons.ttf?6bwdin);
+$url_9: url(../fonts/ua-icons.woff?6bwdin);
+$url_10: url(../fonts/ua-icons.svg?6bwdin#ua-icons);
+
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+h1 {
+	font-family: $font_2, $font_3;
+}
+h2 {
+	font-family: $font_2, $font_3;
+}
+h3 {
+	font-family: $font_2, $font_3;
+}
+h4 {
+	font-family: $font_2, $font_3;
+}
+h5 {
+	font-family: $font_2, $font_3;
+}
+h6 {
+	font-family: $font_2, $font_3;
+}
+h7 {
+	font-family: $font_2, $font_3;
+}
+p {
+	font-family: $font_2, $font_3;
+}
+a {
+	font-family: $font_2, $font_3;
+}
+@font-face {
+	font-family: $font_0;
+	src: $url_1;
+	src: $url_2 format('embedded-opentype'), $url_3 format('truetype'), $url_4 format('woff'), $url_5 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: $font_1;
+	src: $url_6;
+	src: $url_7 format('embedded-opentype'), $url_8 format('truetype'), $url_9 format('woff'), $url_10 format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.ua-icon-denny-chimes {
+	position: fixed;
+	top: 84.1vh;
+	left: 50px;
+	font-size: 30vh;
+	color: $color_tamarillo_approx;
+	z-index: 1;
+	font-style: normal;
+	&:before {
+		content: "\e800";
+	}
+}
+[class^="ua-icon-"] {
+	font-family: $font_1;
+}
+[class*=" ua-icon-"] {
+	font-family: $font_1;
+}
+@media only screen and(max-width: 960px) {
+	.ua-icon-denny-chimes {
+		display: none;
+	}
+}
+#wpadminbar * {
+	font-family: $font_2, $font_3;
+}
+.ua-logo-nameplate:before {
+	content: "\e601";
+}
+.ua-logo-stacked:before {
+	content: "\e600";
+}
+.ua-icon-volunteer-outreach:before {
+	content: "\e900";
+}
+.ua-icon-ua-general:before {
+	content: "\e901";
+}
+.ua-icon-ua-world:before {
+	content: "\e902";
+}
+.ua-icon-sports:before {
+	content: "\e903";
+}
+.ua-icon-social-work:before {
+	content: "\e904";
+}
+.ua-icon-school-general:before {
+	content: "\e905";
+}
+.ua-icon-nursing:before {
+	content: "\e906";
+}
+.ua-icon-medical-chs:before {
+	content: "\e907";
+}
+.ua-icon-libraries:before {
+	content: "\e908";
+}
+.ua-icon-law:before {
+	content: "\e909";
+}
+.ua-icon-honors:before {
+	content: "\e90a";
+}
+.ua-icon-hes:before {
+	content: "\e90b";
+}
+.ua-icon-grow:before {
+	content: "\e90c";
+}
+.ua-icon-graduate:before {
+	content: "\e90d";
+}
+.ua-icon-excellence:before {
+	content: "\e90e";
+}
+.ua-icon-engineering:before {
+	content: "\e90f";
+}
+.ua-icon-education:before {
+	content: "\e910";
+}
+.ua-icon-continuing-studies:before {
+	content: "\e911";
+}
+.ua-icon-communications:before {
+	content: "\e912";
+}
+.ua-icon-business-2:before {
+	content: "\e913";
+}
+.ua-icon-business-1:before {
+	content: "\e914";
+}
+.ua-icon-awards:before {
+	content: "\e915";
+}
+.ua-icon-arts-sciences:before {
+	content: "\e916";
+}

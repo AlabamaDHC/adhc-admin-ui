@@ -1,0 +1,82 @@
+.wp-core-ui .button.button-large, .wp-core-ui .button-group.button-large .button {
+  background: #444;
+  color: white;
+  height: auto;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 10px 0;
+  width: 100%;
+  border: 2px solid #444; }
+
+body {
+  background: #f1f1f1; }
+
+html {
+  background: #f1f1f1; }
+
+.login h1 {
+  background-image: none, url(https://upload.wikimedia.org/wikipedia/commons/4/47/University_of_Alabama_%28logo%29.png);
+  background-size: 320px auto;
+  width: 320px;
+  height: 83px;
+  background-repeat: no-repeat;
+  margin: 0 auto 45px auto; }
+  .login h1 a {
+    background-image: none;
+    padding-top: 29%;
+    text-indent: 0;
+    pointer-events: none;
+    cursor: default;
+    width: auto; }
+.login label {
+  color: #444; }
+.login #login_error a {
+  color: #990000; }
+.login #backtoblog a {
+  color: #990000; }
+  .login #backtoblog a:hover {
+    color: #990000; }
+.login #nav a {
+  color: #990000; }
+  .login #nav a:hover {
+    color: #990000; }
+
+#loginform {
+  padding-bottom: 25px; }
+
+input[type=checkbox]:focus {
+  border-color: #990000;
+  box-shadow: 0 0 2px rgba(158, 27, 50, 0.8); }
+input[type=checkbox]:checked:before {
+  color: #990000; }
+
+.wp-core-ui .button-primary {
+  border-color: transparent;
+  box-shadow: none;
+  text-shadow: none; }
+  .wp-core-ui .button-primary.focus {
+    border-color: transparent;
+    box-shadow: none; }
+  .wp-core-ui .button-primary.hover {
+    border-color: transparent;
+    box-shadow: none; }
+  .wp-core-ui .button-primary:focus {
+    border-color: transparent;
+    box-shadow: none; }
+  .wp-core-ui .button-primary:hover {
+    border-color: transparent;
+    box-shadow: none; }
+.wp-core-ui .button.button-large:hover {
+  background: white;
+  color: #444;
+  border: 2px solid #444; }
+
+input[type=password]:focus {
+  border-color: #990000;
+  box-shadow: 0 0 2px rgba(158, 27, 50, 0.8); }
+
+input[type=text]:focus {
+  border-color: #990000;
+  box-shadow: 0 0 2px rgba(158, 27, 50, 0.8); }
+
+/*# sourceMappingURL=login.css.map */

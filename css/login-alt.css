@@ -1,0 +1,521 @@
+/**
+ * @Package: WordPress Plugin
+ * @Subpackage: Material - White Label WordPress Admin Theme Theme
+ * @Since: Mtrl 1.0
+ * @WordPress Version: 4.0 or above
+ * This file is part of Material - White Label WordPress Admin Theme Theme Plugin.
+ * V:3
+ */
+body {
+  vertical-align: top;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 23px;
+  font-size: 14px;
+  background-color: #cccccc !important;
+  background-image: url(https://www.ua.edu/img/dennychimes19_1920.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center !important; }
+  body * {
+    vertical-align: top;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box; }
+  body a {
+    display: inline-block; }
+  body label {
+    display: inline-block; }
+
+p {
+  line-height: 23px;
+  font-size: 14px; }
+
+#backtoblog {
+  margin: 0px 0 0; }
+
+.mobile #login {
+  padding: 0px; }
+
+.login.wp-core-ui .button-primary {
+  height: 34px;
+  line-height: 28px;
+  border-radius: 0px;
+  padding: 0 12px 2px;
+  border-color: transparent;
+  text-shadow: none;
+  width: 100%;
+  height: 42px;
+  line-height: 36px;
+  padding: 2px 12px 2px 12px;
+  font-size: 17px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  transform: translateY(0px);
+  -webkit-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background-color: #990000;
+  color: #fff; }
+  .login.wp-core-ui .button-primary:active {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    border-color: transparent;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  .login.wp-core-ui .button-primary:focus {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    border-color: transparent;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px);
+    background-color: #840202; }
+  .login.wp-core-ui .button-primary:hover {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    border-color: transparent;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px);
+    background-color: #840202; }
+.login.wp-core-ui input[type=checkbox] {
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-shadow: none;
+  height: 20px;
+  width: 20px; }
+  .login.wp-core-ui input[type=checkbox]:checked:before {
+    color: #eeeeee; }
+
+input[type=checkbox] {
+  background-color: transparent;
+  color: #eeeeee; }
+  input[type=checkbox]:checked:before {
+    margin: -1px 0 0 -2px; }
+
+.login {
+  color: #fff; }
+  .login h1 {
+    background: #fff;
+    color: #fff; }
+    .login h1 a {
+      background-size: contain;
+      background-color: transparent;
+      width: auto;
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 23px;
+      margin: 0px auto 0px auto;
+      padding: 0;
+      text-decoration: none;
+      max-width: 391px;
+      width: 100%;
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/University_of_Alabama_%28logo%29.png) !important; }
+  .login form {
+    margin-top: 0px;
+    margin-left: 0;
+    padding: 20px 35px 0px 35px;
+    font-weight: 400;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #fff; }
+    .login form .input {
+      font-size: 15px;
+      width: 100%;
+      padding: 7px 9px 7px 0px;
+      line-height: 21px;
+      margin: 0px 0 40px 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      -o-box-shadow: none;
+      font-weight: 400;
+      background-color: transparent !important;
+      color: #eeeeee;
+      border-bottom-color: #fff; }
+      .login form .input:hover {
+        background-color: transparent !important;
+        border-color: #990000; }
+      .login form .input:focus {
+        background-color: transparent !important;
+        border-color: #990000; }
+    .login form input[type=checkbox] {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      -o-box-shadow: none;
+      font-weight: 400;
+      background-color: transparent !important;
+      color: #fff;
+      border-color: #fff; }
+      .login form input[type=checkbox]:hover {
+        color: #fff;
+        background-color: transparent !important; }
+      .login form input[type=checkbox]:focus {
+        color: #fff;
+        background-color: transparent !important; }
+    .login form .forgetmenot {
+      width: 100%;
+      /*display: block;*/
+      margin: 0px 0 11px 0 !important; }
+      .login form .forgetmenot label {
+        font-size: 14px;
+        line-height: 23px;
+        display: inline-block; }
+    .login form label {
+      color: #fff; }
+  .login #nav {
+    font-size: 13px;
+    padding: 0 23px;
+    text-align: center;
+    margin: 23px 0 0 0;
+    font-weight: 400; }
+  .login #backtoblog {
+    font-size: 13px;
+    padding: 0 23px;
+    text-align: center;
+    margin: 0px 0 11px 0;
+    font-weight: 400; }
+  .login label {
+    font-size: 14px;
+    line-height: 23px;
+    width: 100%;
+    font-weight: 400; }
+  .login input[type=text] {
+    font-size: 15px;
+    width: 100%;
+    padding: 7px 9px 7px 0px;
+    line-height: 21px;
+    margin: 0px 0 40px 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    font-weight: 400;
+    background-color: transparent !important;
+    color: #eeeeee;
+    border-bottom-color: #fff; }
+    .login input[type=text]:hover {
+      background-color: transparent !important;
+      border-color: #990000; }
+    .login input[type=text]:focus {
+      background-color: transparent !important;
+      border-color: #990000; }
+  .login #login_error {
+    border-left: 0px solid transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    margin: -2px 0px 0px 0px;
+    padding: 12px 19px 11px 19px;
+    display: -webkit-box;
+    text-align: left;
+    font-style: italic;
+    background-color: #990000 !important;
+    color: #fff; }
+    .login #login_error a {
+      color: #eeeeee; }
+  .login .message {
+    border-left: 0px solid transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    margin: -2px 0px 0px 0px;
+    padding: 12px 19px 11px 19px;
+    display: -webkit-box;
+    text-align: left;
+    font-style: italic;
+    color: #fff;
+    background-color: #990000; }
+    .login .message a {
+      color: #eeeeee; }
+  .login input[type=checkbox]:hover {
+    border-color: #990000; }
+  .login input[type=checkbox]:focus {
+    border-color: #990000; }
+  .login input[type=password]:hover {
+    border-color: #990000; }
+  .login input[type=password]:focus {
+    border-color: #990000; }
+  .login label[for='user_login']:before {
+    color: #fff; }
+  .login label[for='user_pass']:before {
+    color: #fff; }
+  .login label[for='user_email']:before {
+    color: #fff; }
+
+#login {
+  top: 50%;
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  padding: 0px 0 0;
+  margin: auto;
+  margin-top: -265px;
+  border-radius: 2px;
+  overflow: hidden; }
+  #login form p.submit {
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%; }
+
+input[type=password] {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding-left: 0px;
+  -webkit-transition: all 0.25s ease-out !important;
+  -o-transition: all 0.25s ease-out !important;
+  transition: all 0.25s ease-out !important;
+  background-color: transparent;
+  color: #eeeeee; }
+
+input[type=text] {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding-left: 0px;
+  -webkit-transition: all 0.25s ease-out !important;
+  -o-transition: all 0.25s ease-out !important;
+  transition: all 0.25s ease-out !important;
+  background-color: transparent;
+  color: #eeeeee; }
+
+input[type=email] {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding-left: 0px;
+  -webkit-transition: all 0.25s ease-out !important;
+  -o-transition: all 0.25s ease-out !important;
+  transition: all 0.25s ease-out !important;
+  background-color: transparent;
+  color: #eeeeee; }
+
+input[type='text']:focus {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding-left: 0px;
+  -webkit-transition: all 0.25s ease-out !important;
+  -o-transition: all 0.25s ease-out !important;
+  transition: all 0.25s ease-out !important;
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0px !important; }
+input[type='text']:hover {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0px !important; }
+
+input[type='password']:focus {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding-left: 0px;
+  -webkit-transition: all 0.25s ease-out !important;
+  -o-transition: all 0.25s ease-out !important;
+  transition: all 0.25s ease-out !important;
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0px !important; }
+input[type='password']:hover {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0px !important; }
+
+input[type='email']:hover {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0px !important; }
+input[type='email']:focus {
+  border: 0px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0px !important; }
+
+#wp-auth-check-wrap #wp-auth-check {
+  background-color: #990000 !important;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/University_of_Alabama_%28logo%29.png) !important;
+  background-position: center center !important; }
+
+body.login #backtoblog a {
+  color: #fff; }
+  body.login #backtoblog a:hover {
+    color: #eeeeee; }
+  body.login #backtoblog a:focus {
+    color: #eeeeee; }
+body.login #nav a {
+  color: #fff; }
+  body.login #nav a:hover {
+    color: #eeeeee; }
+  body.login #nav a:focus {
+    color: #eeeeee; }
+body.login a {
+  color: #fff; }
+  body.login a:hover {
+    color: #eeeeee; }
+  body.login a:focus {
+    color: #eeeeee; }
+
+@media screen and (min-width: 767px) {
+  #login {
+    top: 55%;
+    left: 0px;
+    min-height: 430px; }
+
+  .login h1 {
+    text-align: center;
+    position: relative;
+    width: 350px;
+    height: 370px;
+    top: 30px;
+    float: left;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2); }
+    .login h1 a {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0px;
+      font-size: 36px;
+      color: #eeeeee;
+      transform: translateY(-50%); }
+  .login form {
+    min-height: 430px;
+    padding: 45px;
+    max-width: 350px;
+    position: relative;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    background-color: rgba(66, 66, 66, 0.9) !important; }
+  .login #nav {
+    margin-top: -75px;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    float: right; }
+  .login #backtoblog {
+    margin-top: -50px;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    float: right; }
+  .login a:focus {
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none; } }
+@media screen and (max-width: 768px) {
+  #login {
+    max-width: 400px;
+    padding-bottom: 15px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    background-color: rgba(66, 66, 66, 0.9) !important; }
+
+  .login form {
+    background: transparent !important;
+    padding-bottom: 0px; }
+  .login #nav {
+    margin: 15px 0 5px 0; }
+  .login h1 {
+    padding: 10px 10px 10px 10px; }
+
+  .widefat tfoot td input[type=checkbox]:before {
+    font-size: 21px; }
+  .widefat th input[type=checkbox]:before {
+    font-size: 21px; }
+  .widefat thead td input[type=checkbox]:before {
+    font-size: 21px; }
+
+  input[type=checkbox]:checked:before {
+    font-size: 21px; } }
+@media screen and (max-width: 480px) {
+  #login {
+    max-width: 280px; } }
+@media screen and (max-height: 600px) {
+  body {
+    height: 130%; }
+
+  #login {
+    padding: 0px;
+    top: 50%; } }
+@media screen and (max-height: 480px) {
+  body {
+    height: 150%; }
+
+  #login {
+    top: 50%; } }

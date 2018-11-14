@@ -1,0 +1,219 @@
+//colors
+$white:  white;
+$color_red_berry_approx: #990000;
+$black_20: rgba(0, 0, 0, 0.2);
+$color_storm_dust_approx: #666;
+
+@media screen and(min-width: 782px) {
+	html {
+		padding-top: 46px !important;
+	}
+	#wpadminbar .quicklinks > ul > li > a {
+		padding: 7px 12px;
+	}
+}
+#wpadminbar {
+	height: auto;
+	background: $color_red_berry_approx;
+	box-shadow: 0 2px 5px rgba(0,0,0,.26);
+	.quicklinks {
+		.menupop {
+			ul li a {
+				&:focus {
+					color: $white;
+					strong {
+						color: $white;
+					}
+				}
+				&:hover {
+					color: $white;
+					strong {
+						color: $white;
+					}
+				}
+			}
+			&.hover ul li a {
+				&:focus {
+					color: $white;
+				}
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+		li#wp-admin-bar-my-account.with-avatar > a img {
+			float: left;
+			margin: 3px 15px;
+			width: 24px;
+			height: 24px;
+			border: 1px solid $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+		}
+	}
+	li {
+		&.hover {
+			.ab-icon:before {
+				color: $white;
+			}
+			.ab-item:before {
+				color: $white;
+			}
+		}
+		&:hover {
+			#adminbarsearch:before {
+				color: $white;
+			}
+			.ab-icon:before {
+				color: $white;
+			}
+			.ab-item:before {
+				color: $white;
+			}
+		}
+		.ab-item:focus:before {
+			color: $white;
+		}
+		a:focus .ab-icon:before {
+			color: $white;
+		}
+	}
+	.ab-submenu {
+		padding: 0;
+		li:hover > .ab-item {
+			background: $black_20;
+		}
+	}
+	.shortlink-input {
+		margin-top: 0;
+		left: 0;
+		background: $color_red_berry_approx;
+	}
+	.dashicons {
+		font-size: 30px;
+		height: 30px;
+		width: 30px;
+	}
+	&.nojs .quicklinks .menupop:hover ul li a {
+		&:focus {
+			color: $white;
+		}
+		&:hover {
+			color: $white;
+		}
+	}
+	.ab-top-menu > li {
+		padding: 0;
+		&.hover > .ab-item {
+			background: $black_20;
+			background: transparent;
+		}
+		&:hover > .ab-item {
+			background: transparent;
+		}
+		> .ab-item:focus {
+			background: transparent;
+		}
+	}
+	&.nojq .quicklinks .ab-top-menu > li > .ab-item:focus {
+		background: $black_20;
+		background: transparent;
+	}
+	&:not(.mobile) .ab-top-menu > li {
+		&:hover > .ab-item {
+			background: $black_20;
+		}
+		> .ab-item:focus {
+			background: $black_20;
+		}
+	}
+	.menupop .ab-sub-wrapper {
+		margin-top: 0;
+		left: 0;
+		background: $color_red_berry_approx;
+		ul li a {
+			padding: 4px 10px;
+		}
+	}
+	#adminbarsearch:before {
+		color: $white;
+	}
+	.ab-icon:before {
+		color: $white;
+	}
+	.ab-item:before {
+		color: $white;
+	}
+	#wp-admin-bar-user-info .username {
+		color: $white;
+	}
+	a.ab-item {
+		color: $white !important;
+		.icon:before {
+			font-size: 20px;
+			vertical-align: middle !important;
+			padding: 6px 4px 0 0;
+		}
+	}
+	> #wp-toolbar span {
+		&.ab-label {
+			color: $white !important;
+		}
+		&.noticon {
+			color: $white !important;
+		}
+	}
+	ul#wp-admin-bar-root-default > li#wp-admin-bar-wp-logo {
+		display: none;
+	}
+	.dashicons-before:before {
+		font-size: 30px;
+		height: 30px;
+		width: 30px;
+	}
+	
+	#wp-admin-bar-search {
+		margin-top: 6px;
+	
+	}
+}
+@media screen and(max-width: 782px) {
+	#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a {
+		width: 70px;
+		img {
+			top: 7px;
+		}
+	}
+}
+#adminmenu {
+	.wp-submenu {
+		background: $white !important;
+		a {
+			color: $color_storm_dust_approx;
+		}
+	}
+	.wp-has-current-submenu {
+		.wp-submenu {
+			background: $white !important;
+		}
+		ul > li > a {
+			padding-left: 34px;
+		}
+	}
+	li.wp-has-current-submenu a.wp-has-current-submenu {
+		padding-bottom: 0;
+	}
+}
+#wp-admin-bar-user-info a img {
+	border: 2px solid $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	&:hover {
+		border: 2px solid $white;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 50%;
+	}
+}
+.admin-bar.masthead-fixed .site-header {
+	top: 46px !important;
+}

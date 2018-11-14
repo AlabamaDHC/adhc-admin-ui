@@ -1,0 +1,130 @@
+//colors
+$seashell: #f1f1f1;
+$color_tundora_approx: #444;
+$color_red_berry_approx: #990000;
+$color_mexican_red_80_approx: rgba(158,27,50, 0.8);
+$white: white;
+
+//urls
+$url_0: url(https://upload.wikimedia.org/wikipedia/commons/4/47/University_of_Alabama_%28logo%29.png);
+
+//@extend-elements
+//original selectors
+//.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large
+%extend_1 {
+	background: $color_tundora_approx;
+	color: $white;
+	height: auto;
+	font-size: 18px;
+	margin-top: 15px;
+	padding: 10px 0;
+	width: 100%;
+	border: 2px solid $color_tundora_approx;
+}
+
+
+body {
+	background: $seashell;
+}
+html {
+	background: $seashell;
+}
+.login {
+	h1 {
+		background-image: none, $url_0;
+		background-size: 320px auto;
+		width: 320px;
+		height: 83px;
+		background-repeat: no-repeat;
+		margin: 0 auto 45px auto;
+		a {
+			background-image: none;
+			padding-top: 29%;
+			text-indent: 0;
+			pointer-events: none;
+			cursor: default;
+			width: auto;
+		}
+	}
+	label {
+		color: $color_tundora_approx;
+	}
+	#login_error a {
+		color: $color_red_berry_approx;
+	}
+	#backtoblog a {
+		color: $color_red_berry_approx;
+		&:hover {
+			color: $color_red_berry_approx;
+		}
+	}
+	#nav a {
+		color: $color_red_berry_approx;
+		&:hover {
+			color: $color_red_berry_approx;
+		}
+	}
+}
+#loginform {
+	padding-bottom: 25px;
+}
+input[type=checkbox] {
+	&:focus {
+		border-color: $color_red_berry_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_mexican_red_80_approx;
+	}
+	&:checked:before {
+		color: $color_red_berry_approx;
+	}
+}
+.wp-core-ui {
+	.button-primary {
+		border-color: transparent;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none;
+		&.focus {
+			border-color: transparent;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+		}
+		&.hover {
+			border-color: transparent;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+		}
+		&:focus {
+			border-color: transparent;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+		}
+		&:hover {
+			border-color: transparent;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+		}
+	}
+	.button.button-large {
+		@extend %extend_1;
+		&:hover {
+			background: $white;
+			color: $color_tundora_approx;
+			border: 2px solid $color_tundora_approx;
+		}
+	}
+	.button-group.button-large .button {
+		@extend %extend_1;
+	}
+}
+input[type=password]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_mexican_red_80_approx;
+}
+input[type=text]:focus {
+	border-color: $color_red_berry_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 2px $color_mexican_red_80_approx;
+}
